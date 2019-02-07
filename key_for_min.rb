@@ -10,10 +10,12 @@ def key_for_min_value(name_hash)
     if counter == 0
       min_value = v
       min_key = k
+      puts "#{min_key}: #{min_value}."
     else
       if v < min_value
         min_value = v
         min_key = k
+        puts "#{min_key}: #{min_value}."
       end
     end
   end
