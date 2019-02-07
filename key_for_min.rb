@@ -9,8 +9,11 @@ def key_for_min_value(name_hash)
     if counter == 0
       min_value = v
     else
-      min_value = v if v < min_value
+      if v < min_value
+        min_value = v
+        min_key = k
+      end
     end
   end
-  min_value
+  min_key
 end
