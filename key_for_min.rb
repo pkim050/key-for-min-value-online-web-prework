@@ -18,6 +18,7 @@ def key_for_min_value(name_hash)
         puts "#{min_key}: #{min_value}."
       end
     end
+    counter += 1
   end
   min_key
 end
