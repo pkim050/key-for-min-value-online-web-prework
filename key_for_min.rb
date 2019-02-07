@@ -4,5 +4,5 @@
 def key_for_min_value(name_hash)
   return nil if name_hash == {}
   name_hash = name_hash.sort_by {|k, v| v}
-  name_hash[:1]
+  min_value = name_hash.sort_by {|k, v| -v}[0]
 end
